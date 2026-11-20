@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de Erick">
+    <meta name="author" content="Erick Israel Ortega Robles">
+
+    <title>Página de Erick</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="container mt-4 mb-4" id="inicio">
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a la página de Erick</h1>
+        <p>Esta es una simple página web creada con HTML.</p>
+    </header>
+
+    <!-- Alerta de bienvenida -->
+    <div class="alert alert-info" role="alert">
+        ¡Bienvenido! Aquí comparto mis gustos por la programación, la comida, el cine, la música y los videojuegos.
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg bg-light mb-4">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#inicio">Página de Erick</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="d-flex flex-wrap gap-2">
+
+                    <a href="#pasatiempos" class="btn btn-primary">
+                        Mis pasatiempos
+                    </a>
+
+                    <a href="#comidas" class="btn btn-success">
+                        Mis comidas favoritas
+                    </a>
+
+                    <a href="#planes" class="btn btn-warning">
+                        Mis planes para desconectarme
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mis gustos -->
+    <section>
+        <h2>Me gusta mucho la clase del profe Joaquín</h2>
+        <h3>Me gustan mucho los taquitos</h3>
+        <h4>Me gusta mucho la música y ver pelis con mi novia</h4>
+        <h5>Me gustan mucho los corridos</h5>
+        <h6>Mi pasatiempo favorito es jugar FC 27 con mi hermano</h6>
+    </section>
+
+    <!-- Carrusel de imágenes -->
+    <section class="mt-4">
+
+        <h2 class="text-primary">Mis gustos en imágenes</h2>
+
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel"
+                    data-bs-slide-to="0" class="active"
+                    aria-label="Imagen 1"></button>
+
+                <button type="button" data-bs-target="#carrusel"
+                    data-bs-slide-to="1"
+                    aria-label="Imagen 2"></button>
+
+                <button type="button" data-bs-target="#carrusel"
+                    data-bs-slide-to="2"
+                    aria-label="Imagen 3"></button>
+            </div>
+
+            <!-- Imágenes del carrusel -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/videojuegos.png"
+                        class="d-block w-100"
+                        alt="Videojuegos">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/fc27.jpg"
+                        class="d-block w-100"
+                        alt="FC 27">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/gta 6.png"
+                        class="d-block w-100"
+                        alt="GTA 6">
+                </div>
+
+            </div>
+
+            <!-- Botón anterior -->
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carrusel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <!-- Botón siguiente -->
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carrusel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Tarjetas -->
+    <section class="mt-4">
+
+        <h2 class="text-primary">Acerca de mis gustos</h2>
+
+        <div class="row g-4">
+
+            <!-- Tarjeta de programación -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Programación</h3>
+
+                        <p class="card-text">
+                            Me gusta mucho la programación y aprender cosas nuevas.
+                        </p>
+
+                        <a href="#planes" class="btn btn-primary">
+                            Conoce mis planes
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de videojuegos -->
+            <div class="col-md-4">
+                <div class="card h-100">
+
+                    <img src="img/videojuegos.png"
+                        class="card-img-top"
+                        alt="Videojuegos">
+
+                    <div class="card-body">
+                        <h3 class="card-title">Videojuegos</h3>
+
+                        <p class="card-text">
+                            Me gusta jugar FC 27 con mi hermano y tengo muchas ganas de jugar GTA 6.
+                        </p>
+
+                        <a href="#pasatiempos" class="btn btn-success">
+                            Mis pasatiempos
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta del gimnasio -->
+            <div class="col-md-4">
+                <div class="card h-100">
+
+                    <img src="https://www.aimeespinks.com/wp-content/uploads/2020/12/AdvertisingPhotography_Gymshark_Logo_009.jpg"
+                        class="card-img-top"
+                        alt="Gymshark">
+
+                    <div class="card-body">
+                        <h3 class="card-title">Gimnasio</h3>
+
+                        <p class="card-text">
+                            Me gusta mucho ir al gym y mejorar mi condición física.
+                        </p>
+
+                        <a href="#pasatiempos" class="btn btn-secondary">
+                            Mis actividades
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de NFL -->
+            <div class="col-md-4">
+                <div class="card h-100">
+
+                    <div class="card-header">
+                        Mi deporte favorito
+                    </div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqLOvKXZJXmYlJXBXHkgZup3EqHxCQZXJ07x3RF893KQ&s=10"
+                        class="card-img-top"
+                        alt="NFL">
+
+                    <div class="card-body">
+                        <h3 class="card-title">NFL</h3>
+
+                        <p class="card-text">
+                            Me gusta ver los partidos de mi equipo favorito.
+                        </p>
+
+                        <a href="#pasatiempos" class="btn btn-danger">
+                            Conoce mis gustos
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de películas -->
+            <div class="col-md-4">
+                <div class="card h-100">
+
+                    <img src="https://www.slashfilm.com/img/gallery/pixar-marvel-disney-hoping-add-characters/intro-import.jpg"
+                        class="card-img-top"
+                        alt="Películas">
+
+                    <div class="card-body">
+                        <h3 class="card-title">Películas</h3>
+
+                        <p class="card-text">
+                            Me gusta ver películas y pasar tiempo con mi novia.
+                        </p>
+
+                        <a href="#planes" class="btn btn-warning">
+                            Mis planes
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de música -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+
+                        <h3 class="card-title">Música</h3>
+
+                        <p class="card-text">
+                            Me gusta escuchar música en mi tiempo libre, especialmente los corridos.
+                        </p>
+
+                        <a href="#planes" class="btn btn-primary">
+                            Conoce más
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lista no ordenada -->
+    <section id="pasatiempos" class="mt-4">
+
+        <h2 class="text-primary">Mis pasatiempos</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item">Jugar videojuegos</li>
+            <li class="list-group-item">Ver películas</li>
+            <li class="list-group-item">Ver a mi novia</li>
+            <li class="list-group-item">Ir al gimnasio</li>
+            <li class="list-group-item">Escuchar música</li>
+        </ul>
+
+    </section>
+
+    <!-- Lista ordenada -->
+    <section id="comidas" class="mt-4">
+
+        <h2 class="text-primary">Mis comidas favoritas</h2>
+
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Tacos</li>
+            <li class="list-group-item">Pizza</li>
+            <li class="list-group-item">Boneless</li>
+        </ol>
+
+    </section>
+
+    <!-- Tabla -->
+    <section id="planes" class="mt-4">
+
+        <h2 class="text-primary">Mis planes para desconectarme</h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-striped table-hover">
+
+                <thead class="table-primary">
+                    <tr>
+                        <th>Tiempo disponible</th>
+                        <th>Planes</th>
+                        <th>¿Qué necesito?</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>45 minutos</td>
+                        <td>Jugar un partido</td>
+                        <td>Un Xbox y un control</td>
+                    </tr>
+
+                    <tr>
+                        <td>15 minutos</td>
+                        <td>Escuchar música</td>
+                        <td>Audífonos y una playlist</td>
+                    </tr>
+
+                    <tr>
+                        <td>90 minutos</td>
+                        <td>Ver una película</td>
+                        <td>Una televisión y palomitas</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="text-center bg-light p-4 mt-4">
+
+        <p><strong>Erick Israel Ortega Robles</strong></p>
+
+        <p>2026 - Mi página personal</p>
+
+        <a href="#inicio" class="btn btn-outline-primary">
+            Volver al inicio
+        </a>
+
+    </footer>
+
+</main>
+
+<!-- JavaScript de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
